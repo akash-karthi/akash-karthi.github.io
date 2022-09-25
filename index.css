@@ -145,7 +145,7 @@ a:hover {
 .whoami {
     background-blend-mode: overlay;
     width: 90%;
-    height: 300px;
+    height: 200px;
     backdrop-filter: blur( 4px);
     -webkit-backdrop-filter: blur( 4px);
     display: flex;
@@ -171,16 +171,19 @@ a:hover {
 
 .accolades {
     display: flex;
-    width: 550px;
+    margin-top: 50px;
+    width: 100%;
     height: 250px;
     flex-direction: column;
 }
 
 .ls-accolades {
+    display: inline-block;
     color: #ffffff;
     font-size: 18px;
     margin-left: 20px;
     word-spacing: .15em;
+    flex-wrap: wrap;
 }
 
 .dot {
@@ -196,7 +199,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: 500px;
+    width: 100%;
     height: 300px;
 }
 
@@ -232,4 +235,206 @@ a:hover {
     width: 100px;
     height: 100px;
     object-fit: cover;
+}
+
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #5a5e5b;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #ffffff;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 32px;
+}
+
+
+/* NAVBAR MENU */
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+    list-style-type: none;
+}
+
+
+/* DROPDOWN MENU */
+
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: #5a5e5b;
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #ffffff;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #5a5e5b;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li a:hover {
+        display: inline-block;
+        color: #ffffff;
+        transition: 0.3s ease;
+    }
+    .menu li+li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+        background-color: #5a5e5b;
+    }
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+    .cmd {
+        font-size: 20px;
+    }
+    .whoami {
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    #angle-open,
+    #angle-close {
+        color: #9fef00;
+        font-size: 50px;
+    }
+    #name {
+        color: #9fef00;
+        font-size: 30px;
+    }
+    .intro {
+        display: flex;
+        width: 350px;
+        height: 90px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
+    }
+    .whoami p {
+        font-size: 15px;
+    }
+    #baseline-abt-me {
+        color: #ffffff;
+        width: 20px;
+    }
+    #role-1 {
+        font-size: 15px;
+    }
+    #role-2 {
+        font-size: 15px;
+    }
+    .accolades {
+        margin-top: 80px;
+        font-size: 15px !important;
+    }
+    .ls-accolades {
+        font-size: 15px !important;
+        width: 200px;
+    }
+    .intro {
+        width: 250px;
+    }
+    @keyframes typing-web-pentester {
+        from {
+            width: 0
+        }
+        to {
+            width: 110px;
+        }
+    }
+    @keyframes typing-security-enthusiast {
+        from {
+            width: 0
+        }
+        to {
+            width: 150px;
+        }
+    }
 }
