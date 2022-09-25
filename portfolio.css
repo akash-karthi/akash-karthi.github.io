@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #282727;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    background: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    color: #9fef00;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cde3d1;
+}
+
+.nav {
+    display: flex;
+    width: 400px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#angle-open,
+#angle-close {
+    color: #9fef00;
+    font-size: 120px;
+}
+
+#name {
+    color: #9fef00;
+    font-size: 50px;
+}
+
+.intro {
+    display: flex;
+    width: 350px;
+    height: 90px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+}
+
+#baseline-abt-me {
+    color: #ffffff;
+    width: 20px;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.roles {
+    color: #9fef00;
+    display: inline-flex;
+    width: max-content;
+    height: max-content;
+    overflow: hidden;
+    font-size: 20px;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+}
+
+#role-1 {
+    position: relative;
+    display: inline-flex;
+    animation: typing-web-pentester 3.5s steps(13, end), blink-caret .75s step-end infinite;
+}
+
+#role-2 {
+    display: none;
+    position: relative;
+    animation: typing-security-enthusiast 3.5s steps(19, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing-web-pentester {
+    from {
+        width: 0
+    }
+    to {
+        width: 160px;
+    }
+}
+
+@keyframes typing-security-enthusiast {
+    from {
+        width: 0
+    }
+    to {
+        width: 220px;
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.whoami {
+    background-blend-mode: overlay;
+    width: 90%;
+    height: 300px;
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+.bio {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.whoami p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.cmd {
+    color: #9fef00;
+}
+
+.accolades {
+    display: flex;
+    width: 550px;
+    height: 250px;
+    flex-direction: column;
+}
+
+.ls-accolades {
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 20px;
+    word-spacing: .15em;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #9fef00;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.ping-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 500px;
+    height: 300px;
+}
+
+.links {
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links:hover {
+    color: #9fef00;
+}
+
+.dash {
+    display: inline-flex;
+    height: 5px;
+    width: 20px;
+    background-color: #9fef00;
+    margin-top: -1px;
+}
+
+.link-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: 30px;
+}
+
+#neon-cube {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
