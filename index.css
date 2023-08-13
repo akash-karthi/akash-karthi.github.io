@@ -175,6 +175,7 @@ a:hover {
 .wrapaccolades { 
     display: flex;
     align-items: center;
+    height: 25px;
 }
 .ls-accolades {
     display: inline-block;
