@@ -369,6 +369,9 @@ input[type=checkbox] {
     .whoami {
         height: 300px;
     }
+    .bio{
+        margin-top: 35px;
+    }
 }
 
 @media (max-width: 500px) {
