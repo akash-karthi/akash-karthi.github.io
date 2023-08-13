@@ -141,7 +141,6 @@ a:hover {
 .whoami {
     background-blend-mode: overlay;
     width: 90%;
-    height: 200px;
     backdrop-filter: blur( 4px);
     -webkit-backdrop-filter: blur( 4px);
     display: flex;
@@ -365,9 +364,6 @@ input[type=checkbox] {
     }
     .cmd {
         font-size: 20px;
-    }
-    .whoami {
-        height: 300px;
     }
     .bio{
         margin-top: 35px;
