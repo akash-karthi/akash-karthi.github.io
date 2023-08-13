@@ -413,6 +413,10 @@ input[type=checkbox] {
     .intro {
         width: 250px;
     }
+
+    .bio{
+        margin-top: 50px;
+    }
     @keyframes typing-web-pentester {
         from {
             width: 0
