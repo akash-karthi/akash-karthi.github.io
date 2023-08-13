@@ -10,10 +10,6 @@ body {
     font-weight: 400;
     line-height: 24px;
     width: 100%;
-    background: url('./bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 a {
@@ -231,13 +227,6 @@ a:hover {
     height: 30px;
 }
 
-#neon-cube {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-
 /* NAVBAR STYLING STARTS */
 
 .navbar {
@@ -245,7 +234,6 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #5a5e5b;
     color: #fff;
 }
 
