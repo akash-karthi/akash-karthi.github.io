@@ -172,7 +172,7 @@ a:hover {
     flex-direction: column;
 }
 
-.accolades span { 
+.wrapaccolades { 
     display: flex;
     align-items: center;
 }
