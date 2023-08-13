@@ -453,7 +453,7 @@ input[type=checkbox] {
 }
 
 .fakeMenu {
-  width: 350px;
+  width: 95%;
   box-sizing: border-box;
   height: 25px;
   background-color: #bbb;
@@ -465,7 +465,7 @@ input[type=checkbox] {
 .fakeScreen {
   background-color: #151515;
   box-sizing: border-box;
-  width: 350px;
+  width: 95%;
   margin: 0 auto;
   padding: 20px;
   border-bottom-left-radius: 5px;
