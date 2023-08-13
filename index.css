@@ -172,6 +172,10 @@ a:hover {
     flex-direction: column;
 }
 
+.accolades span { 
+    display: flex;
+    align-items: center;
+}
 .ls-accolades {
     display: inline-block;
     color: #ffffff;
